@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class adresses extends Model
+class card_payment extends Model
 {
     //
 }
