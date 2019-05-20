@@ -16,10 +16,10 @@ class CreateDeliveriesTable extends Migration
         Schema::create('deliveries', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
-            $table->string('receptorName');
-            $table->string('ContactName');
-            $table->integer('extraWaitTime');
-            $table->string('deliveryDirection');
+            $table->string('receptor_name');
+            $table->string('contact_name');
+            $table->integer('extra_wait_time');
+            $table->string('delivery_direction');
             $table->foreign('restaurant_id')->references('id')->on('restaurants');
         });
     }

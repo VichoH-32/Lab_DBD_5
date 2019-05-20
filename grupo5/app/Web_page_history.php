@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Web_page_history extends Model
+class web_page_history extends Model
 {
     //
 }

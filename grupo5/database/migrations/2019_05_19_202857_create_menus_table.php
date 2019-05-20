@@ -17,7 +17,7 @@ class CreateMenusTable extends Migration
             $table->bigIncrements('id');
             $table->timestamps();
             $table->string('name');
-            $table->integer('totalPrice');
+            $table->integer('total_price');
             $table->integer('discount');
             $table->foreign('rastaurant_id')->references('id')->on('restaurants');
         });

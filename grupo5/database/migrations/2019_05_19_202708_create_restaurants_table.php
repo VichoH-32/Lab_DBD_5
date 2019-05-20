@@ -18,14 +18,14 @@ class CreateRestaurantsTable extends Migration
             $table->timestamps();
             $table->string('name');
             $table->string('category');
-            $table->string('contactNumber');
-            $table->string('TipoCocina'); //cambiar a ingles
-            $table->timestamps('openingHour');
-            $table->timestamps('closingHour');
+            $table->string('contact_number');
+            $table->string('tipo_cocina'); //cambiar a ingles
+            $table->timestamps('opening_hour');
+            $table->timestamps('closing_hour');
             $table->integer('');
-            $table->integer('waitTime');
-            $table->string('branchDirection'); //direccion sucursal
-            $table->integer('tableAmount');
+            $table->integer('wait_time');
+            $table->string('branch_direction'); //direccion sucursal
+            $table->integer('table_amount');
             $table->foreign('user_id')->references('id')->on('users');
         });
     }
